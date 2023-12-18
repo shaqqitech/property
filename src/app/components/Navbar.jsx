@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   FaWhatsapp,
   FaFacebook,
@@ -21,6 +21,21 @@ import { PiReadCvLogo } from "react-icons/pi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const menuData = [
     {
@@ -101,7 +116,7 @@ const Navbar = () => {
                 title="Instagram"
               />
             </Link>
-            <div className="relative">
+            <div className="relative" ref={menuRef}>
               <Link href={""}>
                 {isOpen ? (
                   <FaMixer
@@ -118,11 +133,19 @@ const Navbar = () => {
                 )}
               </Link>
               {isOpen && (
-                <ul className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 bg-black/10 rounded-lg grid grid-cols-2">
+                <ul
+                  
+                  className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 bg-black/10 rounded-lg grid grid-cols-2"
+                >
                   {data.map((item, ind) => (
-                      <Link href={item.link} target="_blank" title={item.title} key={ind}>
-                        {item.logo}
-                      </Link>
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      title={item.title}
+                      key={ind}
+                    >
+                      {item.logo}
+                    </Link>
                   ))}
                 </ul>
               )}
