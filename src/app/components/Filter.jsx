@@ -5,11 +5,13 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Filter = () => {
   return (
     <main className="w-full h-36 py-3 px-6">
+        {/* Upper Div */}
       <div className="flex">
         <p className="font-bold text-2xl">
           178 <span className="text-slate-400 font-medium">Results</span>
         </p>
       </div>
+      {/* Lower Div */}
       <div className="flex flex-col bg-black/10 rounded-lg w-full h-24 px-2 md:px-5 py-3 space-y-3">
         <h3 className="flex justify-start items-center cursor-pointer space-x-2">
           <IoFilterOutline /> <span className="font-semibold text-xl">Filter</span>
