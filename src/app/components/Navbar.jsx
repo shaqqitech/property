@@ -118,7 +118,7 @@ const Navbar = () => {
                 )}
               </Link>
               {isOpen && (
-                <ul className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 bg-slate-300 rounded-lg grid grid-cols-2">
+                <ul className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 bg-black/10 rounded-lg grid grid-cols-2">
                   {data.map((item, ind) => (
                       <Link href={item.link} target="_blank" title={item.title} key={ind}>
                         {item.logo}
