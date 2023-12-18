@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-      <main className="w-[95vw] h-24 flex justify-between items-center px-5">
+      <main className="w-[95vw] h-24 flex justify-between items-center px-5 border-b-2">
         {/* Left box */}
         <div className="w-48 h-full flex justify-start items-center">
           {/* Image Box */}
@@ -49,7 +49,7 @@ const Header = () => {
         {/* Right box */}
         <div className="w-60 flex justify-between items-center px-5">
             <span className="cursor-pointer"><CiGift size={25}/></span>
-            <div className="w-32 h-10 grid place-content-center place-items-center grid-cols-2 bg-slate-200 rounded-lg px-3">
+            <div className="w-32 h-10 grid place-content-center place-items-center grid-cols-2 bg-black/10 rounded-lg px-3">
                 <p className="bg-white w-full h-full grid place-content-center cursor-pointer rounded-lg">Buy</p>
                 <p>Rent</p>
             </div>
