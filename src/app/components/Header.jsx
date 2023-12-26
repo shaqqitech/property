@@ -28,7 +28,7 @@ const Header = () => {
         <div className="w-48 h-full flex justify-start items-center">
           {/* Image Box */}
           <div className="flex flex-col justify-center items-center space-y-1">
-            <div id="imagePreview" className="w-10 h-10 rounded-lg border-2"></div>
+            <div id="imagePreview" className="w-8 md:w-10 h-8 md:h-10 rounded-lg border-2"></div>
             <input
               type="file"
               accept="image/*"
@@ -41,14 +41,14 @@ const Header = () => {
             </button>
           </div>
           {/* Name Box */}
-          <div className="text-xl text-slate-400">
+          <div className="t text-slate-400 text-sm md:text-lg lg:text-xl">
             Hi, <span className="font-bold text-black">Anna✋</span>
           </div>
         </div>
 
         {/* Right box */}
-        <div className="w-60 flex justify-between items-center px-5">
-            <span className="cursor-pointer"><FaRegHeart size={25}/></span>
+        <div className="w-52 md:w-60 flex justify-between items-center px-5 text-sm md:text-lg">
+            <span className="cursor-pointer"><FaRegHeart /></span>
             <div className="w-32 h-10 grid place-content-center place-items-center grid-cols-2 bg-black/10 rounded-lg px-3">
                 <p className="bg-white w-full h-full grid place-content-center cursor-pointer rounded-lg text-sm">Buy</p>
                 <p>Rent</p>

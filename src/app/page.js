@@ -1,3 +1,4 @@
+import Content from "./components/Content";
 import Filter from "./components/Filter";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="w-[90vw] lg:w-[95vw] flex flex-col">
         <Header />
         <Filter />
+        <Content />
       </div>
     </main>
   );
