@@ -40,7 +40,7 @@ const Content = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-40 h-48 md:w-48 md:h-60 lg:w-60 lg:h-72 shadow-2xl cursor-pointer rounded-xl overflow-hidden grid grid-rows-2 grid-cols-1 relative"
+            className="sm:w-40 sm:h-48 md:w-48 md:h-60 lg:w-60 lg:h-72 shadow-2xl cursor-pointer rounded-xl overflow-hidden sm:grid grid-rows-2 grid-cols-1 relative"
           >
             <div className="relative">
               <Image

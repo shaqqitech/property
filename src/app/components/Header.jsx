@@ -49,9 +49,9 @@ const Header = () => {
         {/* Right box */}
         <div className="w-52 md:w-60 flex justify-between items-center px-5 text-sm md:text-lg">
             <span className="cursor-pointer"><FaRegHeart /></span>
-            <div className="w-32 h-10 grid place-content-center place-items-center grid-cols-2 bg-black/10 rounded-lg px-3">
-                <p className="bg-white w-full h-full grid place-content-center cursor-pointer rounded-lg text-sm">Buy</p>
-                <p>Rent</p>
+            <div className="w-20 sm:w-24 md:w-32 h-10 flex justify-between items-center bg-black/10 rounded-lg px-3">
+                <p className="bg-white w-full h-1/2 grid place-content-center cursor-pointer rounded-md text-sm">Buy</p>
+                <p className=" w-full h-full grid place-content-center cursor-pointer rounded-lg text-sm">Rent</p>
             </div>
         </div>
       </main>

@@ -16,17 +16,17 @@ const Filter = () => {
         <h3 className="flex justify-start items-center cursor-pointer space-x-2">
           <IoFilterOutline /> <span className="font-semibold text-lg md:text-xl">Filter</span>
         </h3>
-        <div className="flex justify-between md:justify-around items-center">
+        <div className="flex flex-wrap justify-around items-center">
             <ul className="flex space-x-2 md:space-x-5">
-                <h1 className="text-sm md:text-lg">Type:</h1>
+                <h1 className="text-[10px] md:text-lg">Type:</h1>
                 <li className="flex justify-between w-full items-center space-x-2 bg-white lg:px-4 cursor-pointer rounded-md font-bold text-sm md:text-lg">House <span><MdKeyboardArrowDown /></span></li>
             </ul>
             <ul className="flex space-x-2 md:space-x-5">
-                <h1 className="text-sm md:text-lg">Bed:</h1>
+                <h1 className="text-[10px] md:text-lg">Bed:</h1>
                 <li className="flex justify-between w-full items-center space-x-2 bg-white lg:px-4 cursor-pointer rounded-md font-bold text-sm md:text-lg">4-5 <span><MdKeyboardArrowDown /></span></li>
             </ul>
             <ul className="flex space-x-2 md:space-x-5">
-                <h1 className="text-sm md:text-lg">Near:</h1>
+                <h1 className="text-[10px] md:text-lg">Near:</h1>
                 <li className="flex justify-between w-full items-center space-x-2 bg-white lg:px-4 cursor-pointer rounded-md font-bold text-sm md:text-lg">Movie <span><MdKeyboardArrowDown /></span></li>
             </ul>
         </div>
