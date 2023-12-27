@@ -40,7 +40,7 @@ const Content = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="sm:w-40 sm:h-48 md:w-48 md:h-60 lg:w-60 lg:h-72 shadow-2xl cursor-pointer rounded-xl overflow-hidden sm:grid grid-rows-2 grid-cols-1 relative"
+            className="sm:w-40 sm:h-48 md:w-48 md:h-60 lg:w-60 lg:h-72 shadow-2xl rounded-xl overflow-hidden sm:grid grid-rows-2 grid-cols-1 relative"
           >
             <div className="relative">
               <Image
@@ -65,7 +65,7 @@ const Content = () => {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col p-3 space-y-1 md:space-y-2 text-sm md:text-sm lg:text-xl">
+            <div className="flex flex-col p-3 space-y-1 md:space-y-2 text-sm md:text-sm lg:text-xl cursor-pointer">
               <div className="font-bold text-orange-500">
                 {item.rent}
                 <span className="text-slate-500 font-medium text-sm">
