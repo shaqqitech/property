@@ -8,18 +8,18 @@ const MenuBar = () => {
 
   const menuData = [
     {
-      logo: <FaHome size={20} />,
+      logo: <FaHome  />,
       title: "Home",
     },
     {
-      logo: <FaStar size={20} />,
+      logo: <FaStar  />,
       title: "Popular",
     },
     {
-      logo: <IoIosTrendingUp size={20} />,
+      logo: <IoIosTrendingUp  />,
       title: "Trending",
     },
-    { logo: <FaSearch size={20} />, title: "Search" },
+    { logo: <FaSearch  />, title: "Search" },
   ];
 
   const handleIconClick = (title) => {
@@ -27,13 +27,13 @@ const MenuBar = () => {
   };
 
   return (
-    <main className="w-fit p-3 flex flex-col bg-white rounded-xl space-y-3">
+    <main className="w-fit p-3 flex flex-col rounded-xl space-y-3">
       {menuData.map((item, ind) => (
         <div
           className={
             isActive === item.title
-              ? "text-blue-500 cursor-pointer"
-              : "text-black cursor-pointer"
+              ? "text-blue-500 cursor-pointer text-sm md:text-lg"
+              : "text-black cursor-pointer text-sm md:text-lg"
           }
           title={item.title}
           key={ind}

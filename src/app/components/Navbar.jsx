@@ -28,16 +28,16 @@ const Navbar = () => {
         {/* Others Div */}
         <div className="flex justify-center items-center flex-col space-y-3">
           <h1 className="text-xs md:text-sm">Others</h1>
-          <div className="w-fit p-4 bg-white rounded-xl space-y-3">
-            <FaPhoneAlt className="cursor-pointer" size={20} title="Contact" />
+          <div className="w-fit p-4 rounded-xl space-y-3">
+            <FaPhoneAlt className="cursor-pointer text-sm md:text-lg" title="Contact" />
             <MdOutlineSettings
-              className="cursor-pointer"
-              size={20}
+              className="cursor-pointer text-sm md:text-lg"
+            
               title="Setting"
             />
             <MdPowerSettingsNew
-              className="cursor-pointer"
-              size={20}
+              className="cursor-pointer text-sm md:text-lg"
+            
               title="Log Out"
             />
           </div>
