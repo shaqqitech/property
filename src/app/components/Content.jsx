@@ -53,13 +53,13 @@ const Content = () => {
               <div className="">
                 <button
                   onClick={() => prevImage(item.id)}
-                  className="bg-white left-2 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-50 text-black bottom-1/3 text-xl transform -translate-y-1/2"
+                  className="bg-white left-2 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-20 text-black bottom-1/3 text-xl transform -translate-y-1/2"
                 >
                   <IoIosArrowBack />
                 </button>
                 <button
                   onClick={() => nextImage(item.id)}
-                  className="bg-white right-2 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-50 text-black bottom-1/3 text-xl transform -translate-y-1/2"
+                  className="bg-white right-2 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-20 text-black bottom-1/3 text-xl transform -translate-y-1/2"
                 >
                   <IoIosArrowForward />
                 </button>
