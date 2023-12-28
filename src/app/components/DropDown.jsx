@@ -6,7 +6,6 @@ function DropDown({Data, Title}) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-//   const countries = ['Pakistan', 'India', 'China', 'Nepal', 'Bangladesh', 'Albania', 'Mali', 'Malta', 'Mongolia', 'Canada'];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
