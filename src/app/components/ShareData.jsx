@@ -91,7 +91,7 @@ const ShareData = () => {
         )}
 
         {isOpen && (
-          <ul className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 rounded-lg grid grid-cols-2 z-40 bg-slate-300 text-sm md:text-lg">
+          <ul className="absolute top-0 left-12 w-20 p-3 border-2 h-20 place-content-center place-items-center gap-4 rounded-lg grid grid-cols-2 -z-40 bg-slate-300 text-sm md:text-lg">
             {data.map((item, ind) => (
               <Link
                 href={item.link}
