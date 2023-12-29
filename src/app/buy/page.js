@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Data } from "../constants/Data";
 
-const Popular = () => {
+const Buy = () => {
   const [data, setData] = useState(Data);
 
   const nextImage = (itemId) => {
@@ -35,7 +35,7 @@ const Popular = () => {
 
   return (
     <main className="w-full px-20 py-5 space-y-2 -z-10">
-      <h1 className="w-full text-center py-4 text-2xl font-bold">Popular</h1>
+      <h1 className="w-full text-center py-4 text-2xl font-bold">Buy</h1>
       <div className="w-full gap-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center place-items-center">
         {data.map((item) => (
           <div
@@ -87,4 +87,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default Buy;

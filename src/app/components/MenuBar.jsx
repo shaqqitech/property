@@ -25,16 +25,16 @@ const MenuBar = () => {
       title: "Trending",
       link: "/trending",
     },
-    { logo: <FaSearch />, title: "Search" },
+    { logo: <FaSearch />, title: "Search", link: '/' },
   ];
 
   const handleIconClick = (title) => {
     setIsActive(title);
-    if (title === "Search") {
-      setShowSearch(true);
-    } else {
-      setShowSearch(false);
-    }
+    // if (title === "Search") {
+    //   setShowSearch(true);
+    // } else {
+    //   setShowSearch(false);
+    // }
   };
 
   return (
@@ -50,18 +50,9 @@ const MenuBar = () => {
           key={ind}
           onClick={() => handleIconClick(item.title)}
         >
-          {item.title === "Search" ? (
-            <FaSearch />
-          ) : (
-            <Link href={item.link}>{item.logo}</Link>
-          )}
+          <Link href={`${item.link}`}>{item.logo}</Link>
         </span>
       ))}
-      {showSearch && (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-md shadow-md">
-          <Search />
-        </div>
-      )}
     </main>
   );
 };

@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React, { useRef } from "react";
 import { FaRegHeart } from "react-icons/fa";
 
@@ -48,10 +49,10 @@ const Header = () => {
 
         {/* Right box */}
         <div className="w-52 md:w-60 flex justify-evenly items-center px-5 text-sm md:text-lg">
-            <span className="cursor-pointer"><FaRegHeart /></span>
+            <Link href={'/favorites'} className="cursor-pointer"><FaRegHeart /></Link>
             <div className="w-20 sm:w-24 md:w-32 h-10 flex justify-between items-center bg-black/10 rounded-lg px-1">
-                <p className="bg-white w-full h-1/2 grid place-content-center cursor-pointer rounded-md text-sm p-1">Buy</p>
-                <p className=" w-full h-full grid place-content-center cursor-pointer rounded-md text-sm p-1">Rent</p>
+                <Link href={'/buy'} className="bg-white w-full h-1/2 grid place-content-center cursor-pointer rounded-md text-sm p-1">Buy</Link>
+                <Link href={'/rent'} className=" w-full h-full grid place-content-center cursor-pointer rounded-md text-sm p-1">Rent</Link>
             </div>
         </div>
       </main>
