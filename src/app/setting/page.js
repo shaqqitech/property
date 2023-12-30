@@ -20,7 +20,11 @@ const SettingsPage = () => {
       displayLogo,
       allowNotifications,
     });
+<<<<<<< HEAD
     // database logic here
+=======
+    // You can implement saving settings to a database or API here
+>>>>>>> 80c70325d9dab78ad33f0a95b6f7823719854a13
   };
 
   return (
