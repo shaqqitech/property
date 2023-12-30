@@ -1,18 +1,18 @@
-'use client';
-import React, { useState } from 'react';
-import { AiFillCheckCircle, AiOutlineCheckCircle } from 'react-icons/ai';
+"use client";
+import React, { useState } from "react";
+import { AiFillCheckCircle, AiOutlineCheckCircle } from "react-icons/ai";
 
 const SettingsPage = () => {
-  const [siteName, setSiteName] = useState('');
-  const [siteURL, setSiteURL] = useState('');
-  const [themeColor, setThemeColor] = useState('#000000');
-  const [fontSize, setFontSize] = useState('medium');
+  const [siteName, setSiteName] = useState("");
+  const [siteURL, setSiteURL] = useState("");
+  const [themeColor, setThemeColor] = useState("#000000");
+  const [fontSize, setFontSize] = useState("medium");
   const [displayLogo, setDisplayLogo] = useState(true);
   const [allowNotifications, setAllowNotifications] = useState(false);
 
   const handleSaveSettings = () => {
     // Handle saving settings logic here
-    console.log('Settings saved:', {
+    console.log("Settings saved:", {
       siteName,
       siteURL,
       themeColor,
@@ -34,7 +34,9 @@ const SettingsPage = () => {
             <h2 className="text-xl font-semibold mb-4">General Settings</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="siteName" className="block mb-1 font-medium">Website Name</label>
+                <label htmlFor="siteName" className="block mb-1 font-medium">
+                  Website Name
+                </label>
                 <input
                   type="text"
                   id="siteName"
@@ -45,7 +47,9 @@ const SettingsPage = () => {
                 />
               </div>
               <div>
-                <label htmlFor="siteURL" className="block mb-1 font-medium">Website URL</label>
+                <label htmlFor="siteURL" className="block mb-1 font-medium">
+                  Website URL
+                </label>
                 <input
                   type="text"
                   id="siteURL"
@@ -63,7 +67,9 @@ const SettingsPage = () => {
             <h2 className="text-xl font-semibold mb-4">Display Settings</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="themeColor" className="block mb-1 font-medium">Theme Color</label>
+                <label htmlFor="themeColor" className="block mb-1 font-medium">
+                  Theme Color
+                </label>
                 <input
                   type="color"
                   id="themeColor"
@@ -73,7 +79,9 @@ const SettingsPage = () => {
                 />
               </div>
               <div>
-                <label htmlFor="fontSize" className="block mb-1 font-medium">Font Size</label>
+                <label htmlFor="fontSize" className="block mb-1 font-medium">
+                  Font Size
+                </label>
                 <select
                   id="fontSize"
                   value={fontSize}
@@ -92,9 +100,16 @@ const SettingsPage = () => {
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-4">Additional Settings</h2>
             <div className="flex items-center justify-between mb-4">
-              <label htmlFor="displayLogo" className="flex items-center font-medium">
+              <label
+                htmlFor="displayLogo"
+                className="flex items-center font-medium"
+              >
                 Display Logo
-                {displayLogo ? <AiFillCheckCircle className="ml-2 text-green-500" /> : <AiOutlineCheckCircle className="ml-2 text-gray-400" />}
+                {displayLogo ? (
+                  <AiFillCheckCircle className="ml-2 text-green-500" />
+                ) : (
+                  <AiOutlineCheckCircle className="ml-2 text-gray-400" />
+                )}
                 <input
                   type="checkbox"
                   id="displayLogo"
@@ -105,9 +120,16 @@ const SettingsPage = () => {
               </label>
             </div>
             <div className="flex items-center justify-between">
-              <label htmlFor="allowNotifications" className="flex items-center font-medium">
+              <label
+                htmlFor="allowNotifications"
+                className="flex items-center font-medium"
+              >
                 Allow Notifications
-                {allowNotifications ? <AiFillCheckCircle className="ml-2 text-green-500" /> : <AiOutlineCheckCircle className="ml-2 text-gray-400" />}
+                {allowNotifications ? (
+                  <AiFillCheckCircle className="ml-2 text-green-500" />
+                ) : (
+                  <AiOutlineCheckCircle className="ml-2 text-gray-400" />
+                )}
                 <input
                   type="checkbox"
                   id="allowNotifications"
