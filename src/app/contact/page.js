@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import { FiMail, FiPhone } from 'react-icons/fi';
 
@@ -20,7 +20,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic form validation (you can enhance this)
     let errors = {};
     if (!formData.name.trim()) {
       errors.name = 'Name is required';
@@ -40,15 +39,14 @@ const Contact = () => {
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
     } else {
-      // Clear form fields after successful submission (you can handle submission logic)
       setFormData({ name: '', email: '', subject: '', message: '' });
       alert('Form submitted successfully!');
     }
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100 px-20 py-5">
-      <div className="w-full px-6 py-12 bg-white shadow-md rounded-md">
+    <div className="min-h-screen w-screen flex items-center justify-center px-20 py-10">
+      <div className="w-4/8  sm:w-4/12 md:w-8/12 px-4 py-6 bg-gray-200 shadow-xl rounded-md">
         <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -121,9 +119,7 @@ const Contact = () => {
           </button>
         </form>
         <div className="mt-8 text-center">
-          <p className="text-gray-600">
-            Need help? Contact us at:
-          </p>
+          <p className="text-gray-600">Need help? Contact us at:</p>
           <div className="flex items-center justify-center mt-2">
             <FiMail className="text-blue-500 text-xl mr-2" />
             <p>example@email.com</p>
