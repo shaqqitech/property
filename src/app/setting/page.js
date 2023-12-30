@@ -24,11 +24,11 @@ const SettingsPage = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gray-100 py-8">
-      <div className="w-4/5 md:max-w-4xl mx-auto px-4">
+    <div className="min-h-screen w-full py-8">
+      <div className="w-4/5 md:max-w-4xl mx-auto p-4 bg-gray-200">
         <h1 className="text-3xl font-bold mb-6 text-center">Settings</h1>
 
-        <div className="bg-white shadow-md rounded-md p-6">
+        <div className="shadow-md rounded-md p-6">
           {/* General Settings Section */}
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-4">General Settings</h2>
