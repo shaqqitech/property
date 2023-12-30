@@ -45,7 +45,7 @@ function DropDown({Data, Title}) {
           </button>
         </div>
         {isOpen && (
-          <div className="origin-top-right absolute right-0 mt-2 w-32 h-40 overflow-y-auto rounded-md shadow-md shadow-gray-700 bg-white text-black scrollbar-hide">
+          <div className="origin-top-right absolute right-0 mt-2 w-32 h-40 overflow-y-auto rounded-md shadow-md shadow-gray-700 bg-white text-black scrollbar-hide z-50">
             <div className="py-1">
               {Data.map((items) => (
                 <button

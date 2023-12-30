@@ -10,7 +10,7 @@ const Filter = () => {
   const near = ['Theater', 'Cinema', 'Mall', 'Mosque', 'Mandir', 'Church', 'Valley',];
 
   return (
-    <main className="w-full h-36 py-3 px-6 -z-10">
+    <main className="w-full h-36 py-3 px-6">
         {/* Upper Div */}
       <div className="flex">
         <p className="font-bold text-lg lg:text-2xl">
@@ -18,7 +18,7 @@ const Filter = () => {
         </p>
       </div>
       {/* Lower Div */}
-      <div className="flex flex-col bg-black/10 rounded-lg w-full h-24 px-2 md:px-5 py-3 space-y-1">
+      <div className="flex flex-col bg-black/10 rounded-lg w-full h-32 sm:h-24 px-2 md:px-5 py-3 space-y-1">
         <h3 className="flex justify-start items-center cursor-pointer space-x-2">
           <IoFilterOutline /> <span className="font-semibold text-lg md:text-xl">Filter</span>
         </h3>
